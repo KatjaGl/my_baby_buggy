@@ -7,15 +7,35 @@
   background-position: center;
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('poussette.jpeg');
 }
-body{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
 .intro{
   color: white;
   text-align: center;
 }
 
-.ville{
+.localisation{
   display: flex;
-  align-items: center;
+  position: absolute ;
+  z-index: 1 ;
+  top: 300px ;
+  left: 50% ;
+  border-radius: 100px ;
+  font-weight: lighter;
+  color: #4A4A4A;
+
 }
+
+
+  .btn-ghost {
+    color: #4A4A4A;
+    border: 1px solid #4A4A4A;
+    padding: 8px 24px;
+    border-radius: 25px;
+    font-weight: lighter;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+  }
+
+  .btn-ghost:hover {
+    opacity: 1;
+  }

@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
   end
 
   # def show
-  #   # @location = Location.new
+  #   @location = Location.new
   #   @categorie = Categorie.new(product: @poduct)
   # end
 

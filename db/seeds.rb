@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+  Category.destroy_all
+  categories = Category.create([{ product_name: 'buggy' }, { product_name: 'child seat' }])
+  puts "#{Category.count} categories ont été créeés"

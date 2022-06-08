@@ -14,7 +14,6 @@ $coral: rgb(236, 145, 146);
   img{
   height: 100px;
   }
-
 }
 
 .intro{
@@ -29,15 +28,7 @@ $coral: rgb(236, 145, 146);
   opacity: 0.6;
 }
 
-  .btn-ghost {
-    color: #4A4A4A;
-    border: 1px solid #4A4A4A;
-    padding: 8px 24px;
-    border-radius: 25px;
-    font-weight: lighter;
-    opacity: 0.6;
-    transition: opacity 0.3s ease;
-  }
+
 
   .btn-ghost:hover {
     opacity: 1;
@@ -49,12 +40,12 @@ $coral: rgb(236, 145, 146);
   }
 
   .card-poussette {
-    background-image: url("poussette.jpeg");
-    background-size: cover;
+    background-image: url("pouss.jpeg");
+
   }
 
   .card-siege{
-    background-image: url("siege auto.jpeg");
+    background-image: url("sieg.jpeg");
   }
 
   .product-card-home {
@@ -65,5 +56,5 @@ $coral: rgb(236, 145, 146);
     display: flex;
     align-items: center;
     text-align: center;
-    color: rgb(71, 227, 248);
+    color: $coral;
   }

@@ -9,8 +9,8 @@
   Product.destroy_all
   Category.destroy_all
 
-  poussette = Category.create({product_name: "buggy"})
-  siège_auto = Category.create({product_name: "child seat"})
+  poussette = Category.create({product_name: "poussette"})
+  siège_auto = Category.create({product_name: "siège auto"})
   puts "#{Category.count} categories ont été créeés"
 
 

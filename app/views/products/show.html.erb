@@ -11,22 +11,22 @@
 <p><strong>prix_par_jour: </strong><%= @product.prix_par_jour %></p>
 <p><strong>rating: </strong><%= @product.rating %></p>
 
-<div class="col-8 mt-4">
-       <div class="card text-center shadow mb-5 bg-white rounded">
-         <div class="card-header font-italic">
+<%# <div class="col-8 mt-4"> %>
+  <%# <div class="card text-center shadow mb-5 bg-white rounded"> %>
+    <%# <div class="card-header font-italic"> %>
 
-           <%= @product.user.username if @product.user %>
-         </div>
-         <div class="card-body">
-           <div class="card-text text-left"><%= simple_format(@product.details) %></div>
-          <%= link_to "Edit", edit_product_path(@product), class: "btn btn-outline-info" %>
-          <%= link_to "Delete", product_path(@product), class: "btn btn-outline-danger", method: :delete, data: {confirm: "Are you sure?"} %>
-        </div>
-        <div class="card-footer text-muted">
-          <small>Created <%= time_ago_in_words(@product.created_at) %> ago,
-          edited <%= time_ago_in_words(@product.updated_at) %> ago</small>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+      <%# <%= @product.user.username if @product.user %> %>
+    <%# </div> %>
+    <%# <div class="card-body"> %>
+      <%# <div class="card-text text-left"><%= simple_format(@product.id) %></div> %>
+        <%# <%= link_to "Edit", edit_product_path(@product), class: "btn btn-outline-info" %> %>
+        <%# <%= link_to "Delete", product_path(@product), class: "btn btn-outline-danger", method: :delete, data: {confirm: "Are you sure?"} %> %>
+      <%# </div> %>
+      <%# <div class="card-footer text-muted"> %>
+        <%# <small>Created <%= time_ago_in_words(@product.created_at) %> ago, %>
+        <%# edited <%= time_ago_in_words(@product.updated_at) %> ago</small> %>
+      <%# </div> %>
+      <%# </div> %>
+    <%# </div> %>
+  <%# </div> %>
+<%# </div> %>

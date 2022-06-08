@@ -1,4 +1,28 @@
 <h1>Hallo</h1>
-<% @products.each do |product| %>
-  <%= product.marque  %>
-<% end %>
+<%# <% @products.each do |product| %> %>
+  <%# <%= product.marque  %> %>
+<%# <% end %> %>
+
+<div class="cover mb-4 d-flex align-items-center justify-content-center">
+  <div class="text-center text-white">
+    <h1>Save a new product</h1>
+    <h3 class="typed-js" data-controller="typed-js"></h3>
+  </div>
+</div>
+<div class="container py-5">
+  <div class="d-flex align-items-center justify-content-between mb-3">
+    <h3 class="mb-0">My Products</h3>
+    <%= link_to "Create a product", new_product_path, class: "btn btn-flat" %>
+  </div>
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="co-12 col-sm-6 col-md-4 mb-3">
+        <%= link_to product_path(product), class:"text-decoration-none" do %>
+          <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
+            <%= product.category_id %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

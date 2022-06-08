@@ -16,7 +16,7 @@ $coral: rgb(236, 145, 146);
   }
 }
 
-.link{
+#link{
 border-radius: 50%;
 }
 
@@ -31,6 +31,7 @@ border-radius: 50%;
   justify-content: space-between;
   padding-left: 150px;
   padding-right: 150px;
+  margin-bottom: 70px;
   }
 
   .card-poussette {
@@ -51,3 +52,14 @@ border-radius: 50%;
   text-align: center;
   color: $coral;
   }
+
+  .about {
+  text-align: center;
+  h3{
+    color: $coral;
+  }
+}
+
+.champ{
+  color: $coral;
+}

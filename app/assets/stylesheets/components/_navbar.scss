@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: rgb(237, 247, 248);
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -13,5 +13,7 @@
 
 .welcome {
   text-align: center;
+  color: $bleu;
+  font-family: 'Montserrat', sans-serif;
 
 }

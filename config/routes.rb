@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/products/:id', to: 'products#show'
   get '/products/:id/locations/new', to: 'locations#new'
   post '/products/:id/locations', to: 'locations#create'
+  get '/locations', to: 'locations#index'
 end

@@ -1,5 +1,3 @@
-<div class="intro">
-<h3>NAV BAR</h3></div>
 <div class="banner" >
     <h1>BABY BUGGY</h1>
     <h2><strong>Location de poussettes et sieges auto </strong></h2>
@@ -11,23 +9,25 @@
 
 
 <div class= "d-flex align-items-center justify-content-center localisation px-30 " id="searchbar">
-    <a class="btn btn-ghost" href="#">date du début</a>
-    <a class="btn btn-ghost" href="#">date de fin</a>
     <form class= "ville" action=“” class=“formulaire”>
-      <input class=“champ” type=“text” value=ville>
+      <input class=“champ” type=“text” value="sélectionnez votre ville">
     </form>
 
   </div>
 </div>
 
-<div class="card-product">
-  <img src=".. app/assets/images/model.jpg" />
-  <div class="card-product-infos">
-    <p>trouver ma poussette</p>
-  </div>
+<div class=“azerty”>
 
-  <img src=".. app/assets/images/model.jpg" />
-  <div class="card-product-infos">
-    <p>trouver mon siége auto</p>
-  </div>
+    <%= link_to products_path do %>
+      <div class="product-card-home card-poussette">
+        <h3>Poussettes de 0 à 10 ans.</h3>
+      </div>
+    <% end %>
+
+    <%= link_to products_path do %>
+      <div class="product-card-home card-siege">
+        <h3>Siège auto de 0 à 10 ans.</h3>
+      </div>
+    <% end %>
+
 </div>

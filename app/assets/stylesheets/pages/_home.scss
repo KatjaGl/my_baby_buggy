@@ -5,7 +5,11 @@
   color: rgb(148, 229, 239);
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('poussette.jpeg');
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('banner.jpeg');
+  img{
+  height: 100px;
+  }
+
 }
 
 .intro{
@@ -14,7 +18,7 @@
 }
 
 .ville{
-  color: rgb(87, 83, 83);
+  color: rgb(156, 9, 9);
   border-radius: 50px;
   padding: 6px;
   opacity: 0.6;
@@ -32,4 +36,29 @@
 
   .btn-ghost:hover {
     opacity: 1;
+  }
+
+  .azerty {
+    display: flex;
+    background-color: red;
+  }
+
+  .card-poussette {
+    background-image: url("poussette.jpeg");
+    background-size: cover;
+  }
+
+  .card-siege{
+    background-image: url("siege auto.jpeg");
+  }
+
+  .product-card-home {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(71, 227, 248);
   }

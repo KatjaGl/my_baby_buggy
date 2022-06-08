@@ -1,8 +1,4 @@
 
-<%# <% @products.each do |product| %>
-  <%# <%= product.marque  %>
-<%# <% end %>
-
 <div class="cover mb-4 d-flex align-items-center justify-content-center">
   <div class="text-center text-white">
     <h1>Our Products </h1>
@@ -15,16 +11,23 @@
     <%= link_to "Create a product", new_product_path, class: "btn btn-flat" %>
   </div>
   <div class="row">
-    <% @products.each do |product| %>
-      <div class="co-12 col-sm-6 col-md-4 mb-3">
-        <%= link_to product_path(product), class:"text-decoration-none" do %>
-          <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
-            <%= product.category.product_name %>
-            <p><%= product.marque %></p>
+    <div class="prodloc">
+      <% @products.each do |product| %>
+        <div class="item">
+        <div class="mask"></div>
+          <div class="title">
+          <%= product.category.product_name %><%= product.marque %>
           </div>
-        <% end %>
-      </div>
-    <% end %>
+          <div class="apartir"> à partir de</div>
+          <%= product.prix_par_jour %>
+          <sup>€</sup>/jour
+          <%= link_to "Location", product_path(product) %>
+            <div class="photo">
+              <%= image_tag "poussette-familib-bumbleride.jpg" %>
+            </div>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
 
@@ -77,14 +80,19 @@
                     </div> %>
                 </div>
                 <div class="intro_prod">
-                    		<h2>Nous proposons un système de réservation simple et pratique pour tous !
+                    <h2>Nous proposons un système de réservation simple et pratique pour tous !
                         Il suffit de choisir le siège-auto ou la poussette qui correspond à l'âge de votre enfant et le
-                         lieu de votre retrait.</h2>
+                        lieu de votre retrait.</h2>
                     <br/>
                 </div>
 
-                <div class="prodloc">
+                <div class= "products">
+
+                </div>
+
+                <%# <div class="prodloc">
                   <div class="item">
+
                         <div class="mask"></div>
                         <a href="" class="titre">Siège auto Joie de 0 à 10 ans.</a>
                         <div class="apartir"> à partir de</div>
@@ -159,7 +167,7 @@
                         </a>
 
                     </div>
-                </div>
+                </div> %>
 
             </div>
         </div>

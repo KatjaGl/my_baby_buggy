@@ -1,5 +1,6 @@
 class Product < ApplicationRecord
   belongs_to :category
+  has_many :locations
   validates :category_id, presence: true
   validates :weight, numericality: true
   validates :age_of_product, numericality: true

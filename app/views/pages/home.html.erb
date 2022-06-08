@@ -1,19 +1,33 @@
-<div class="intro">
-<h3>NAV BAR</h3></div>
 <div class="banner" >
     <h1>BABY BUGGY</h1>
     <h2><strong>Location de poussettes et sieges auto </strong></h2>
     <h2><strong>Rejoinez nous</strong></h2>
     <p>Louer maintenant partout en France.</p>
+</div>
+
+<div class="container-fluid mx-auto my-0">
+
+
+<div class= "d-flex align-items-center justify-content-center localisation px-30 " id="searchbar">
+    <form class= "ville" action=“” class=“formulaire”>
+      <input class=“champ” type=“text” value="sélectionnez votre ville">
+    </form>
+
+  </div>
+</div>
+
+<div class=“azerty”>
+
+    <%= link_to products_path do %>
+      <div class="product-card-home card-poussette">
+        <h3>Poussettes de 0 à 10 ans.</h3>
+      </div>
+    <% end %>
+
+    <%= link_to products_path do %>
+      <div class="product-card-home card-siege">
+        <h3>Siège auto de 0 à 10 ans.</h3>
+      </div>
+    <% end %>
 
 </div>
-<div class="ville" id=“searchbar”>
-        <form action=“” class=“formulaire”>
-            <input class=“champ” type=“text” value=ville>
-        </form>
-
-        <form action=“” class=“formulaire”>
-            <input class=“champ” type=“text” value=date>
-        </form>
-    </div>
-<div><i class="fa-solid fa-baby-carriage"></i></div>

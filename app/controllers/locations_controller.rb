@@ -13,25 +13,26 @@ class LocationsController < ApplicationController
   def create
     @location = Location.new(location_params)
     @location.product = @product
+    @location.user = current_user
     if @location.save
-      redirect_to product_path(@product)
+      redirect_to products_path
     else
       render :new
     end
   end
 
-  def show
-  end
+  # def show
+  # end
 
-  def edit
-  end
+  # def edit
+  # end
 
-  def update
-  end
+  # def update
+  # end
 
   def destroy
     @location.destroy
-    redirect_to product_path(@location.product)
+    redirect_to products_path
   end
 
   private

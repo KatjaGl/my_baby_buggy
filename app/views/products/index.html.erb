@@ -18,7 +18,7 @@
       <p> Votre <%= product.category.product_name %>  <%= product.marque %> à partir de <%= product.prix_par_jour %>€/jour. </p>
       <p><%= product.city %></p>
       <%= link_to "Louer", product_path(product), class: "btn_louer mb-5 m-auto"%>
-      <%= image_tag product.product_photo %>
+      <div class="buggyimg"><%= image_tag product.product_photo %></div>
     </div>
   <% end %>
- </div>
+</div>

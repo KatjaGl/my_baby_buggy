@@ -5,7 +5,7 @@ $coral: rgb(236, 145, 146);
 
 
 .banner {
-  padding: 24px 0;
+  // padding: 24px 0;
   text-align: center;
   color: rgb(141, 217, 222);
   background-size: cover;
@@ -15,6 +15,16 @@ $coral: rgb(236, 145, 146);
   height: 100px;
   }
 }
+
+.bannerHeader {
+  text-align: center;
+  padding-top: 0;
+}
+.bannerEnd {
+  text-align: center;
+  padding-bottom: 0;
+}
+
 
 #link{
 border-radius: 50%;

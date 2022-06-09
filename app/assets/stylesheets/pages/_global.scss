@@ -2,3 +2,57 @@ $grey: rgb(239, 231, 233);
 $bleu: rgb(114, 158, 161);
 $coral: rgb(236, 145, 146);
 
+
+.ctn{
+  background-color: $grey;
+}
+
+.editor{
+  background-color: $grey;
+}
+.titre{
+  color:$coral;
+}
+.tarif{
+  color:$coral;
+}
+h1{
+  color:$coral;
+}
+
+
+// footer{
+//   background-color: $bleu;
+// }
+// .footer .ctn .blocks {
+//   color: #fff;
+//   font-size: 0px;
+//   }
+
+
+  .material-icons a span {
+    display: inline-block;
+    font-family: "icon";
+    font-size: 16px;
+    padding: 10px 0 2px 0;
+    }
+
+#btnScrollToTop{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e62739;
+  box-shadow: 0 0 10px black;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  }
+
+#btnScrollToTop:active {
+  background-color: #d38b92;
+}
+

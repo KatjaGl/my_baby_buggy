@@ -16,8 +16,9 @@
   <% @products.each do |product| %>
     <div class="card g-col-6">
       <p> Votre <%= product.category.product_name %>  <%= product.marque %> à partir de <%= product.prix_par_jour %>€/jour. </p>
+      <p><%= product.city %></p>
       <%= link_to "Louer", product_path(product), class: "btn_louer mb-5 m-auto"%>
-      <%= image_tag "poussette-familib-bumbleride.jpg", class: "mt-2 d-block" %>
+      <%= image_tag product.product_photo %>
     </div>
   <% end %>
-</div>
+ </div>

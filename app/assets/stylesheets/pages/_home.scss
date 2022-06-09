@@ -36,10 +36,16 @@ border-radius: 50%;
 
   .card-poussette {
     background-image: url("pouss.jpeg");
+    margin-top: 20px;
+    border-radius: 100%;
+
   }
 
   .card-siege{
-  background-image: url("sieg.jpeg");
+  background-image: url("siegeauto.jpeg");
+  margin-top: 20px;
+  border-radius: 100%;
+
   }
 
   .product-card-home {
@@ -59,7 +65,16 @@ border-radius: 50%;
     color: $coral;
   }
 }
-
-.champ{
-  color: $coral;
+.formulaire{
+  text-align: center;
+  color:rgb(236, 145, 146);
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+h2{
+  color:rgb(236, 145, 146);
+  text-align: center;
+  margin-top: 30px;
 }

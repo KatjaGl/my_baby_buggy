@@ -23,8 +23,9 @@
           <sup>€</sup>/jour
           <%= link_to "Location", product_path(product) %>
             <div class="photo">
-              <%= image_tag "poussette-familib-bumbleride.jpg" %>
+              <%= image_tag product.product_photo %>
             </div>
+            <%= product.city %>
         </div>
       <% end %>
     </div>

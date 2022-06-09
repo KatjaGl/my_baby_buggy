@@ -1,0 +1,25 @@
+.btn_louer {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: $bleu;
+  transition: background 0.3s ease;
+  width: 90px;
+}
+
+.btn_louer:hover {
+  background: $coral;
+  color: white;
+}
+
+.produit {
+  padding-left: 15%;
+  padding-right: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.card {
+  background-color: bisque;
+}

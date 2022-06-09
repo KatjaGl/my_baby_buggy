@@ -14,8 +14,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
@@ -31,7 +30,7 @@
       </button>
     </div>
 
-    <script>
+    <%# <script>
       const btnScrollToTop = document.querySelector("#btnScrollToTop");
         btnScrollToTop.addEventListener("click", function () {
           window.scrollTo({
@@ -41,7 +40,7 @@
           });
           // $("html, body").animate({ scrollTop: 0}, "slow");
         });
-    </script>
+    </script> %>
 
     <div class="strc footer">
         <div class="ctn">
@@ -49,24 +48,24 @@
 
                 <div class="blk">
                     <div class="titre">
-                            Service client        </div>
+                            Service client  <i class="fas fa-heart"></i>      </div>
 
                     <div class="item">
                         <a href="" title="Avez-vos des questions ?">Avez-vos des questions ?</a>
-                    </div>
-
-                    <div class="item">
+                        <br>
                         <a href="" title="Pourquoi louer ?">Pourquoi louer ?</a>
-                    </div>
-
-                    <div class="item">
+                        <br>
                         <a href="" title="Location poussettes.">Location poussettes.</a>
-                    </div>
-
-                    <div class="item">
+                        <br>
                         <a href="" title="Location siège auto.">Location siège auto.</a>
                     </div>
+                </div>
 
+                <div class="fooButtons">
+                  <a href="https://www.facebook.com"; <i class="fab fa-facebook"></i></a>
+                  <a href="https://www.youtube.com"; <i class="fab fa-youtube"></i></a>
+                  <a href="https://www.instagram.com"; <i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com"; <i class="fab fa-linkedin"></i></a>
                 </div>
 
                 <div class="blk">
@@ -74,23 +73,16 @@
                         Suivez-nous :
                     </div>
 
-                    <div class="fooButtons">
-                        <a href="https://www.facebook.com" target="_blank">&#xF09A;</a>
-                        <a href="https://www.youtube.com" target="_blank">&#xF167;</a>
-                        <a href="https://www.instagram.com" target="_blank">&#xF16D;</a>
-                    </div>
-
                     <div class="titrenews">
                         <b>Restés informés !</b>
                         <br/> Pour recevoir nos infos :
-
                     </div>
 
                     <div class="subscribe">
-                        <form method="post" name="newsletter" id="newsl" action="addnews.php" enctype="multipart/form-data">
-                            <input type="text" name="email" value="mon email" onFocus="this.value='';">
+                        <form method="post" name="newsletter" enctype="multipart/form-data">
+                            <input type="text" name="email" value="Mon email" onFocus="this.value='';">
                             </input>
-                            <input type="submit" name="valid" class="btn"> Inscription </input>
+                            <input type="submit" name="valid" class="btn">  </input>
                         </form>
                     </div>
                 </div>

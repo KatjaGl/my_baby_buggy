@@ -10,4 +10,12 @@ class Product < ApplicationRecord
   validates :prix_par_jour, presence: true, numericality: true
   validates :number_of_place, numericality: { only_integer: true, greater_than_or_equal_to: 1 }
   validates :rating, numericality: { only_integer: true, greater_than_or_equal_to: 1, less_than_or_equal_to: 10 }
+
+  include PgSearch::Model
+  pg_search_scope :search_by_city,
+    against: [ :city ],
+    using: {
+      tsearch: { prefix: true }
+    }
+
 end

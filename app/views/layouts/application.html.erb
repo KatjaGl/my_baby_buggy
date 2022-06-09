@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
@@ -17,21 +19,83 @@
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
-
   <body>
   <%= render 'shared/navbar' %>
     <%= yield %>
     <%= render 'shared/flashes' %>
-<%#
-    <h1>Scroll To Top Button</h1>
-    <button id="btnScollToTop">
-      <i class="material-icons">arrow_upward</i>
-    </button>
-        <a href="javascript:smoothScroll('body');">
-            <span>&#xE807;</span>
-            <br>
-            HAUT
-        </a> %>
+    <div>
+    <%# <h1>Scroll To Top Button</h1> %>
+      <button id="btnScrollToTop">
+        <i class="material-icons">arrow_upward</i>
+      </button>
+    </div>
+
+    <script>
+      const btnScrollToTop = document.querySelector("#btnScrollToTop");
+        btnScrollToTop.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+          });
+          // $("html, body").animate({ scrollTop: 0}, "slow");
+        });
+    </script>
+
+    <div class="strc footer">
+        <div class="ctn">
+            <div class="blocks">
+
+                <div class="blk">
+                    <div class="titre">
+                            Service client        </div>
+
+                    <div class="item">
+                        <a href="" title="Avez-vos des questions ?">Avez-vos des questions ?</a>
+                    </div>
+
+                    <div class="item">
+                        <a href="" title="Pourquoi louer ?">Pourquoi louer ?</a>
+                    </div>
+
+                    <div class="item">
+                        <a href="" title="Location poussettes.">Location poussettes.</a>
+                    </div>
+
+                    <div class="item">
+                        <a href="" title="Location siège auto.">Location siège auto.</a>
+                    </div>
+
+                </div>
+
+                <div class="blk">
+                    <div class="titre">
+                        Suivez-nous :
+                    </div>
+
+                    <div class="fooButtons">
+                        <a href="https://www.facebook.com" target="_blank">&#xF09A;</a>
+                        <a href="https://www.youtube.com" target="_blank">&#xF167;</a>
+                        <a href="https://www.instagram.com" target="_blank">&#xF16D;</a>
+                    </div>
+
+                    <div class="titrenews">
+                        <b>Restés informés !</b>
+                        <br/> Pour recevoir nos infos :
+
+                    </div>
+
+                    <div class="subscribe">
+                        <form method="post" name="newsletter" id="newsl" action="addnews.php" enctype="multipart/form-data">
+                            <input type="text" name="email" value="mon email" onFocus="this.value='';">
+                            </input>
+                            <input type="submit" name="valid" class="btn"> Inscription </input>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </body>
 
 </html>

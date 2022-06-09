@@ -20,32 +20,44 @@ h1{
 }
 
 
-footer{
-  background-color: $bleu;
-}
+// footer{
+//   background-color: $bleu;
+// }
+// .footer .ctn .blocks {
+//   color: #fff;
+//   font-size: 0px;
+//   }
 
-.goUp a {
-  text-align: center;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 500;
-  }
 
-  .goUp a span {
+// .goUp a {
+//   text-align: center;
+//   color: #ffffff;
+//   font-size: 12px;
+//   font-weight: 500;
+//   }
+
+  .material-icons a span {
     display: inline-block;
     font-family: "icon";
     font-size: 16px;
     padding: 10px 0 2px 0;
     }
 
-  .goUp a {
-    display: inline-block;
-    text-align: center;
-    height: 60px;
-    width: 60px;
-    background-color: #fd0a41;
-    color: #ffffff;
-    border-radius: 60px;
-    font-size: 12px;
-    font-weight: 500;
-      }
+#btnScrollToTop{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e62739;
+  box-shadow: 0 0 10px black;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  }
+
+#btnScrollToTop:active {
+  background-color: #d38b92;
+}

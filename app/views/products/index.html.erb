@@ -38,13 +38,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <title> Location poussettes et siège auto </title>
-    <%# <link rel="stylesheet" href="style.scss"> %>
     <link rel="stylesheet" type="text/css" media="all" href="https://www.location-de-poussette.fr/css/main_style.css?ver=2.8"/>
     <script type="text/javascript" src="https://www.location-de-poussette.fr/js/fastclick.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://www.location-de-poussette.fr/js/jquery.ui.datepicker-fr.js"></script>
-    <script src="https://www.location-de-poussette.fr/js/jquery-ui.multidatespicker.js"></script>
+    <%# <script src="https://www.location-de-poussette.fr/js/jquery.ui.datepicker-fr.js"></script> %>
+    <%# <script src="https://www.location-de-poussette.fr/js/jquery-ui.multidatespicker.js"></script> %>
 
     <script type="text/javascript" src="https://www.location-de-poussette.fr/js/jquery.fancybox.pack.js?v=2.1.5"></script>
     <script type="text/javascript" src="https://www.location-de-poussette.fr/js/url.min.js"></script>
@@ -52,17 +51,7 @@
     <script type="text/javascript" src="https://www.location-de-poussette.fr//js/unslider-min.js"></script>
 
     <%# <script type="text/javascript" src="https://www.location-de-poussette.fr/js/markerwithlabel_packed.js"></script> %>
-    <script type="text/javascript" src="https://www.location-de-poussette.fr/js/infobubble_patched.js"></script>
-
-    <script type="application/javascript">
-    $(document).ready(function() {
-        formReady('.quickGo');
-    });
-    function goLoc() {
-        var goTo = $('#goLocSelect').val();
-        window.location.assign(goTo);
-    }
-    </script>
+    <%# <script type="text/javascript" src="https://www.location-de-poussette.fr/js/infobubble_patched.js"></script>
 
 </head>
 <body>
@@ -174,72 +163,4 @@
 
     </div>
     </body>
-    <footer>
-    <div class="strc footer">
-        <div class="ctn">
-            <div class="blocks">
-
-                <div class="blk">
-                    <div class="titre">
-                            Service client        </div>
-
-                    <div class="item">
-                        <a href="" title="Avez-vos des questions ?">Avez-vos des questions ?</a>
-                    </div>
-
-                    <div class="item">
-                        <a href="" title="Pourquoi louer ?">Pourquoi louer ?</a>
-                    </div>
-
-                    <div class="item">
-                        <a href="" title="Location poussettes.">Location poussettes.</a>
-                    </div>
-
-                    <div class="item">
-                        <a href="" title="Location siège auto.">Location siège auto.</a>
-                    </div>
-
-                </div>
-
-                <div class="blk">
-                    <div class="titre">
-                                Suivez-nous :
-                                </div>
-
-                    <div class="fooButtons">
-                        <a href="https://www.facebook.com" target="_blank">&#xF09A;</a>
-                        <a href="https://www.youtube.com" target="_blank">&#xF167;</a>
-                        <a href="https://www.instagram.com" target="_blank">&#xF16D;</a>
-                    </div>
-
-                    <div class="titrenews">
-                        <b>Restés informés !</b>
-                        <br/> Pour recevoir nos infos :
-
-                    </div>
-                    <div class="subscribe">
-                        <form method="post" name="newsletter" id="newsl" action="addnews.php" enctype="multipart/form-data">
-                            <input type="text" name="email" value="mon email" onFocus="this.value='';">
-                            </input>
-                            <input type="submit" name="valid" class="btn"> Inscription </input>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="goUp" id="goUp">
-        <a href="javascript:smoothScroll('body');">
-            <span>&#xE807;</span>
-            <br>
-            HAUT
-        </a>
-    </div>
-
-    <script>
-    </script>
-</footer>
 </html>

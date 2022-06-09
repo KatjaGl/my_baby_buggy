@@ -20,9 +20,10 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
   <body>
-  <%= render 'shared/navbar' %>
+    <%= render 'shared/navbar' %>
     <%= yield %>
     <%= render 'shared/flashes' %>
+
     <div>
     <%# <h1>Scroll To Top Button</h1> %>
       <button id="btnScrollToTop">

@@ -1,62 +1,23 @@
 
 <div class="cover mb-4 d-flex align-items-center justify-content-center">
-  <div class="text-center text-white">
-    <h1>Our Products </h1>
-    <h3 class="typed-js" data-controller="typed-js"></h3>
-  </div>
-</div>
-<div class="container py-5">
-  <div class="d-flex align-items-center justify-content-between mb-3">
-    <h3 class="mb-0">My Products</h3>
-    <%= link_to "Create a product", new_product_path, class: "btn btn-flat" %>
-  </div>
-  <div class="row">
-    <div class="prodloc">
-      <% @products.each do |product| %>
-        <div class="item">
-        <div class="mask"></div>
-          <div class="title">
-          <%= product.category.product_name %><%= product.marque %>
-          </div>
-          <div class="apartir"> à partir de</div>
-          <%= product.prix_par_jour %>
-          <sup>€</sup>/jour
-          <%= link_to "Location", product_path(product) %>
-            <div class="photo">
-              <%= image_tag product.product_photo %>
-            </div>
-            <%= product.city %>
-        </div>
-      <% end %>
-    </div>
-  </div>
+    <h1> Choisissez votre Baby Buggy</h1>
 </div>
 
-<div class="intro_prod">
+
+<%# <div class="intro_prod">
     <h2>Nous proposons un système de réservation simple et pratique pour tous !
         Il suffit de choisir le siège-auto ou la poussette qui correspond à l'âge de votre enfant et le
         lieu de votre retrait.</h2>
     <br/>
+</div> %>
+
+<div class="container grid produit text-center">
+
+  <% @products.each do |product| %>
+    <div class="card g-col-6">
+      <p> Votre <%= product.category.product_name %>  <%= product.marque %> à partir de <%= product.prix_par_jour %>€/jour. </p>
+      <%= link_to "Louer", product_path(product), class: "btn_louer mb-5 m-auto"%>
+      <%= image_tag "poussette-familib-bumbleride.jpg", class: "mt-2 d-block" %>
+    </div>
+  <% end %>
 </div>
-
-<%# <!doctype html>
-<html lang="fr">
-<head>
-    <meta name="msapplication-tap-highlight" content="no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <title> Location poussettes et siège auto </title>
-    <link rel="stylesheet" type="text/css" media="all" href="https://www.location-de-poussette.fr/css/main_style.css?ver=2.8"/>
-    <script type="text/javascript" src="https://www.location-de-poussette.fr/js/fastclick.js"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <%# <script src="https://www.location-de-poussette.fr/js/jquery.ui.datepicker-fr.js"></script> %>
-    <%# <script src="https://www.location-de-poussette.fr/js/jquery-ui.multidatespicker.js"></script> %>
-
-    <%# <script type="text/javascript" src="https://www.location-de-poussette.fr/js/jquery.fancybox.pack.js?v=2.1.5"></script>
-    <script type="text/javascript" src="https://www.location-de-poussette.fr/js/url.min.js"></script>
-    <script type="text/javascript" src="https://www.location-de-poussette.fr/js/script.js?v=0.0.2"></script>
-    <script type="text/javascript" src="https://www.location-de-poussette.fr//js/unslider-min.js"></script> %>
-
-    <%# <script type="text/javascript" src="https://www.location-de-poussette.fr/js/markerwithlabel_packed.js"></script> %>
-    <%# <script type="text/javascript" src="https://www.location-de-poussette.fr/js/infobubble_patched.js"></script> %>

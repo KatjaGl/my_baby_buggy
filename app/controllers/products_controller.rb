@@ -3,7 +3,12 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :destroy]
 
   def index
-    @products = Product.all
+    if params[:query].present?
+      @products = Product.search_by_city(params[:query])
+    else
+      @products = Product.all
+    end
+    params[:query] = ""
   end
 
   def show
@@ -52,6 +57,6 @@ class ProductsController < ApplicationController
   end
 
   def product_params
-    params.require(:product).permit(:number_of_place, :weight, :age_of_product, :details, :child_weight, :marque, :color, :prix_par_jour, :rating)
+    params.require(:product).permit(:number_of_place, :weight, :age_of_product, :details, :child_weight, :marque, :color, :prix_par_jour, :rating, :city, :product_photo)
   end
 end

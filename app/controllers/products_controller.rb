@@ -3,12 +3,26 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :destroy]
 
   def index
-    if params[:query].present?
-      @products = Product.search_by_city(params[:query])
+    if params[:category].present?
+      if params[:category] == "poussette"
+        category = Category.find_by_product_name('poussette')
+        @products = Product.where(category_id: category.id)
+        if params[:query].present?
+          @products = Product.where(category_id: category.id).search_by_city(params[:query])
+        end
+      elsif params[:category] == "siege"
+        category = Category.find_by_product_name('siège auto')
+        @products = Product.where(category_id: category.id)
+        if params[:query].present?
+          @products = Product.where(category_id: category.id).search_by_city(params[:query])
+        end
+      else
+        @products = Product.all
+      end
     else
       @products = Product.all
     end
-    params[:query] = ""
+    # params[:query] = ""
   end
 
   def show

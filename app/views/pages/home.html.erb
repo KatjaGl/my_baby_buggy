@@ -10,7 +10,7 @@
 </div>
 
 <div class= "formulaire">
-<%= form_tag products_path, method: :get do %>
+<%= form_tag products_path, method: :get, id:'search-form' do %>
   <%= text_field_tag :query,
     params[:query],
     class: "form-control d-flex align-items-center justify-content-center localisation",
@@ -23,13 +23,13 @@
 <div class="box">
 
     <%= link_to products_path do %>
-      <div class="product-card-home card-poussette">
+      <div class="product-card-home card-poussette" id="poussette-icone">
 
       </div>
     <% end %>
 
     <%= link_to products_path do %>
-      <div class="product-card-home card-siege">
+      <div class="product-card-home card-siege" id="siege-icone">
 
       </div>
     <% end %>

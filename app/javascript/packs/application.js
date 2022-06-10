@@ -17,6 +17,13 @@ import "controllers"
 import "bootstrap"
 
 
+import { btnScrollToTop } from "../plugins/buttonscroll";
+document.addEventListener('turbolinks:load', () => {
+  // Call your functions here, e.g:
+  btnScrollToTop();
+});
+
+
 document.addEventListener('turbolinks:load', () => {
   calculator();
 });

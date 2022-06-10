@@ -1,0 +1,19 @@
+.blocks {
+  background-color: $bleu;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.fab {
+font-size: 40px;
+}
+.titre {
+  font-size: 20px;
+}
+
+// .blk {
+//   padding: auto;
+// }

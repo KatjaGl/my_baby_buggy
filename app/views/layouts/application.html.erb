@@ -5,24 +5,90 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-     <link
+    <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
-
   <body>
-  <%= render 'shared/navbar' %>
+    <%= render 'shared/navbar' %>
     <%= yield %>
     <%= render 'shared/flashes' %>
 
+    <div>
+    <%# <h1>Scroll To Top Button</h1> %>
+      <button id="btnScrollToTop">
+        <i class="material-icons">arrow_upward</i>
+      </button>
+    </div>
+
+    <%# <script>
+      const btnScrollToTop = document.querySelector("#btnScrollToTop");
+        btnScrollToTop.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+          });
+          // $("html, body").animate({ scrollTop: 0}, "slow");
+        });
+    </script> %>
+
+    <div class="strc footer">
+        <div class="ctn">
+            <div class="blocks">
+
+                <div class="blk">
+                    <div class="titre">
+                            Service client  <i class="fas fa-heart"></i>      </div>
+
+                    <div class="item">
+                        <a href="" title="Avez-vos des questions ?">Avez-vos des questions ?</a>
+                        <br>
+                        <a href="" title="Pourquoi louer ?">Pourquoi louer ?</a>
+                        <br>
+                        <a href="" title="Location poussettes.">Location poussettes.</a>
+                        <br>
+                        <a href="" title="Location siège auto.">Location siège auto.</a>
+                    </div>
+                </div>
+
+                <div class="fooButtons">
+                  <a href="https://www.facebook.com"; <i class="fab fa-facebook"></i></a>
+                  <a href="https://www.youtube.com"; <i class="fab fa-youtube"></i></a>
+                  <a href="https://www.instagram.com"; <i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com"; <i class="fab fa-linkedin"></i></a>
+                </div>
+
+                <div class="blk">
+                    <div class="titre">
+                        Suivez-nous :
+                    </div>
+
+                    <div class="titrenews">
+                        <b>Restés informés !</b>
+                        <br/> Pour recevoir nos infos :
+                    </div>
+
+                    <div class="subscribe">
+                        <form method="post" name="newsletter" enctype="multipart/form-data">
+                            <input type="text" name="email" value="Mon email" onFocus="this.value='';">
+                            </input>
+                            <input type="submit" name="valid" class="btn">  </input>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </body>
 
 </html>

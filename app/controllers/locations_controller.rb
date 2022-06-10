@@ -8,6 +8,14 @@ class LocationsController < ApplicationController
 
   def new
     @location = Location.new
+    @location = Location.find(params[:id])
+    @products = @location.products
+    @locations_dates = @locations.map do |location|
+      {
+        from: location.date_debut,
+        to: location.date_fin
+      }
+    end
   end
 
   def create
@@ -21,11 +29,12 @@ class LocationsController < ApplicationController
     end
   end
 
-  # def show
-  # end
+  def show
 
-  # def edit
-  # end
+  end
+
+  #def edit
+  #end
 
   # def update
   # end

@@ -20,7 +20,7 @@ import "bootstrap"
 import { btnScrollToTop } from "../plugins/buttonscroll";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
-  btnScrollToTop();
+  window.onload = btnScrollToTop();
 });
 
 

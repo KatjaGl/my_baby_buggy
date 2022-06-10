@@ -2,12 +2,20 @@ $grey: rgb(239, 231, 233);
 $bleu: rgb(114, 158, 161);
 $coral: rgb(236, 145, 146);
 
+.input-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn_louer {
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
   background: $bleu;
   width: 90px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .btn_louer:hover {
@@ -26,34 +34,49 @@ $coral: rgb(236, 145, 146);
   grid-gap: 15px;
   box-sizing: border-box;
   width: 80%;
-  border: solid #0f0f0f 10px;
+  // border: solid #0f0f0f 10px;
   padding: 5px;
 
 }
 
 .card {
-  border: solid #5B6DCD 10px;
-  background-color: $grey;
+  // border: solid #5B6DCD 10px;
+  background-color: transparent;
+  display: flex;
+
+  align-items: center;
 
 }
 
-.buggyimg {
-  // border-radius: 50%;
-  height:200px;
-  // width:200px;
-  justify-items: center;
-  border: solid #a92884 10px;
+.image-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: solid #a92884 10px;
+  background-color: white;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+
+}
+.image-size img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
-h1{
+
+h1 {
   // color:$coral;
   padding: 30px 0 0 20px;
   // text-align: left;
   // margin-left: 3%;
 }
 
-p{
+p {
   color:$bleu;
+  font-size: 20px;
+  font-weight: bold;
   line-height: 1.5;
   text-align: center;
 }

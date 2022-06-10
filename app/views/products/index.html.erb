@@ -15,10 +15,10 @@
 
   <% @products.each do |product| %>
     <div class="card g-col-6">
-      <p> Votre <%= product.category.product_name %>  <%= product.marque %> à partir de <%= product.prix_par_jour %>€/jour. </p>
+      <p> Votre <%= product.category.product_name %>  <%= product.marque.capitalize %>. </p>
       <p><%= product.city %></p>
-      <div class="buggyimg"> <%= image_tag product.product_photo %> </div>
-      <%= link_to "Louer", product_path(product), class: "btn_louer mb-5 m-auto"%>
+      <div class="image-size"> <%= image_tag product.product_photo %> </div>
+      <%= link_to "Louer", product_path(product), class: "btn_louer"%>
     </div>
   <% end %>
 </div>

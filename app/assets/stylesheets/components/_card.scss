@@ -6,9 +6,10 @@ $coral: rgb(236, 145, 146);
   background-color: $grey;
   font-family:$bleu;
 }
-.card-content{
-  border-radius: 5px rgb(218, 10, 135);
-}
+// .card-content{
+//   border-radius: 5px rgb(218, 10, 135);
+//   text-align: center;
+// }
 
 .btn-louer {
   color: white;
@@ -24,6 +25,7 @@ $coral: rgb(236, 145, 146);
 }
 .card-img{
   width: auto;
+  margin-top: 10px;
 }
 
 h1{
@@ -33,15 +35,16 @@ h1{
   // margin-left: 3%;
 }
 
-h4{
+
+h4 {
   color:$bleu;
-  text-align: left;
-  justify-content: space-around;
+  text-align: center;
+  justify-content: center;
   font-size: 1.6rem;
   margin-left: 5%;
 }
 h5{
-  margin-left: 5%;
+  margin-left: 10%;
   color: $bleu;
   text-decoration: underline;
   padding: 20px 0;
@@ -50,6 +53,7 @@ h5{
   color:$bleu;
   line-height: 1.5;
   text-align:left;
+  margin-left: 10%;
 }
 .card {
   padding: 10px 0;

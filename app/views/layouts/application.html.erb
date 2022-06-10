@@ -16,7 +16,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %> %>
   </head>
   <body>
     <%= render 'shared/navbar' %>
@@ -89,6 +89,7 @@
             </div>
         </div>
     </div>
+     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </body>
 
 </html>

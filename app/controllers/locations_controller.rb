@@ -1,6 +1,7 @@
 class LocationsController < ApplicationController
   before_action :set_location, only: :destroy
   before_action :set_product, only: [:new, :create]
+  skip_before_action :authenticate_user!, only: [:new, :create]
 
   def index
     @location = Location.all
@@ -8,6 +9,13 @@ class LocationsController < ApplicationController
 
   def new
     @location = Location.new
+    @locations = @product.locations
+    @locations_dates = @locations.map do |location|
+      {
+        from: location.date_debut,
+        to: location.date_fin
+      }
+    end
   end
 
   def create

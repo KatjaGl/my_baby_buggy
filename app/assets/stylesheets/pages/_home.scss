@@ -5,16 +5,26 @@ $coral: rgb(236, 145, 146);
 
 
 .banner {
-  padding: 24px 0;
+  // padding: 24px 0;
   text-align: center;
   color: rgb(141, 217, 222);
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('banner.jpeg');
-  img{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('bibi3.jpeg');
+  img {
   height: 100px;
   }
 }
+
+.bannerHeader {
+  text-align: center;
+  padding-top: 0;
+}
+.bannerEnd {
+  text-align: center;
+  padding-bottom: 0;
+}
+
 
 #link{
 border-radius: 50%;
@@ -60,6 +70,8 @@ border-radius: 50%;
   }
 
   .about {
+    margin-left: 60px;
+    margin-right: 60px;
   text-align: center;
   h3{
     color: $coral;

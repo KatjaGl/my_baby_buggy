@@ -8,7 +8,9 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 100px;
+  height: 80px;
+  margin-left: 20px;
 }
 
 .welcome {
@@ -16,7 +18,6 @@
   color: $bleu;
 }
 
-.navbar-brand img {
-width: 50px;
-height: 50px;
+.nav-link {
+  margin-right: 20px;
 }

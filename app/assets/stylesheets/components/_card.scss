@@ -2,26 +2,29 @@ $grey: rgb(239, 231, 233);
 $bleu: rgb(114, 158, 161);
 $coral: rgb(236, 145, 146);
 
-// .card-show{
-//   background-color: $grey;
-//   font-family:$bleu;
-// }
+.card-show{
+  background-color: $grey;
+  font-family:$bleu;
+}
+.card-content{
+  border-radius: 5px rgb(218, 10, 135);
+}
 
-// .btn-louer {
-//   color: white;
-//   padding: 8px 24px;
-//   border-radius: 4px;
-//   background: $bleu;
-//   transition: background 0.3s ease;
-// }
+.btn-louer {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: $bleu;
+  transition: background 0.3s ease;
+}
 
-// .btn-louer:hover {
-//   background: $bleu;
-//   color: white;
-// }
-// .card-img{
-//   width: auto;
-// }
+.btn-louer:hover {
+  background: $bleu;
+  color: white;
+}
+.card-img{
+  width: auto;
+}
 
 h1{
   // color:$coral;
@@ -30,34 +33,34 @@ h1{
   // margin-left: 3%;
 }
 
-// h4{
-//   color:$bleu;
-//   text-align: left;
-//   justify-content: space-around;
-//   font-size: 1.6rem;
-//   margin-left: 5%;
-// }
-// h5{
-//   margin-left: 5%;
-//   color: $bleu;
-//   text-decoration: underline;
-//   padding: 20px 0;
-// }
-p{
+h4{
+  color:$bleu;
+  text-align: left;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  margin-left: 5%;
+}
+h5{
+  margin-left: 5%;
+  color: $bleu;
+  text-decoration: underline;
+  padding: 20px 0;
+}
+.caract-prod {
   color:$bleu;
   line-height: 1.5;
-  text-align: center;
+  text-align:left;
 }
-// .card g-col-6 {
-//   padding: 10px 0;
-//   background-color:$grey;
-//   display: flex;
-//   justify-content: space-around;
-//   background-color: white;
-// }
+.card {
+  padding: 10px 0;
+  background-color:$grey;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
 
-.buggyimg {
-  height: 200px;
-  width: 200px;
-  border-radius: 50px;
-}
+// .buggyimg {
+//   height: 200px;
+//   width: 200px;
+//   border-radius: 50px;
+// }

@@ -11,7 +11,7 @@ $coral: rgb(236, 145, 146);
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('bibi3.jpeg');
-  img{
+  img {
   height: 100px;
   }
 }
@@ -70,6 +70,8 @@ border-radius: 50%;
   }
 
   .about {
+    margin-left: 60px;
+    margin-right: 60px;
   text-align: center;
   h3{
     color: $coral;

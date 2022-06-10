@@ -1,5 +1,17 @@
-
-<div class= "d-flex align-items-center justify-content-center localisation px-30 " id="searchbar">
-    <a class="btn btn-ghost" href="#">date du début</a>
-    <a class="btn btn-ghost" href="#">date de fin</a>
-    </div>
+<div class="container">
+  <div class="form-wrapper">
+    <h2>Reservez votre produit </h2>
+    <%= simple_form_for [@product, @location] do |f| %>
+      <%= f.input :date_debut, as: :string,
+                               required: false,
+                               input_html: { id: "range_start", class: "d-none" } %>
+      <%= f.input :date_fin, as: :string,
+                             required: false,
+                             input_html: { id: "range_end", class: "d-none" } %>
+      <%= f.button :submit, "Reservez", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+<div id="booking-form-div"
+     data-bookings="<%= @locations_dates.to_json %>">
+</div>

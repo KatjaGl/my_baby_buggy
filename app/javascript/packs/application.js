@@ -29,3 +29,9 @@ document.addEventListener('turbolinks:load', () => {
   calculator();
   homeLink();
 });
+
+import { initFlatpickr } from '../plugins/flatpickr';
+
+document.addEventListener('turbolinks:load', () => {
+  initFlatpickr();
+})

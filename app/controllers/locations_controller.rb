@@ -15,7 +15,7 @@ class LocationsController < ApplicationController
     @location.product = @product
     @location.user = current_user
     if @location.save
-      redirect_to products_path
+      redirect_to products_path, notice: "Merci pour votre réservation"
     else
       render :new
     end

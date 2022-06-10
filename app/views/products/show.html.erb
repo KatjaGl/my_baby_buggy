@@ -1,5 +1,6 @@
 
 <div class="container">
+<div class="d-flex">
   <div class="card-show">
     <div class="card-title">
       <h1><%=@product.category.product_name.capitalize %>,<br> <%= @product.marque.capitalize %></h1>
@@ -63,16 +64,18 @@
 
         <div class="card-img">
         <%= image_tag "pous3.jpeg"%>
-        </div>
 
-        <div class="card-img-family">
-          <%= image_tag ""%>
         </div>
 
       </div>
         <div class="btn-louer">
           <%= link_to "Reserver", new_product_location_path(@product), class: "btn btn-flat" %>
         </div>
-
     </div>
+
+    <div class="family">
+      <%= image_tag "couple.png", size:"470x820"%>
+    </div>
+    </div>
+
 </div>

@@ -5,6 +5,7 @@ $coral: rgb(236, 145, 146);
 .card-show{
   background-color: $grey;
   font-family:$bleu;
+  width: 550px;
 }
 // .card-content{
 //   border-radius: 5px rgb(218, 10, 135);
@@ -63,6 +64,12 @@ h5{
   justify-content: space-around;
   background-color: white;
 }
+
+.family{
+  width: 200px;
+  height: 200px;
+}
+
 
 // .buggyimg {
 //   height: 200px;

@@ -2,13 +2,13 @@
 <div class="container">
   <div class="card-show">
     <div class="card-title">
-      <h1><%=@product.category.product_name %>, <%= @product.marque %></h1>
+      <h1><%=@product.category.product_name.capitalize %>,<br> <%= @product.marque.capitalize %></h1>
       <h4>A partir de <%= @product.prix_par_jour %>€/jour!</h4>
-      <h5> Caractéristiques du produit:</h5>
     </div>
 
     <div class="card-content">
       <div class="calculator">
+      <p>Tarif pour:</p>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <label class="input-group-text" for="inputGroupSelect01">Jours</label>
@@ -31,11 +31,13 @@
             <option value="12">12</option>
 
           </select>
+          <div class="total mx-3"> </div>
         </div>
-        <div class="total">0 €</div>
+        <%# <div class="total ml-3"> </div> %>
               </div>
 
       <div class="caract-prod" >
+      <h5> Caractéristiques du produit:</h5>
         <% if @product.category.product_name == "Poussette" %>
         <ol>
           <li>La poussette est adaptée pour <%= @product.number_of_place %> enfant(s).</li>
@@ -48,7 +50,7 @@
           <li>Vos notes: <%= @product.rating %>.</li>
         <% else %>
           <li>Le siège-auto est adapté pour <%= @product.number_of_place %> enfant(s).</li>
-          <li>Il pèse </li><%= @product.weight %>kg.</p>
+          <li>Il pèse <%= @product.weight %> kg.</li>
           <li>Acheté il y a <%= @product.age_of_product %> années.</li>
           <li>Les + : <%= @product.details %>.</li>
           <li>Pour des enfants de <%= @product.child_weight %>kg.</li>

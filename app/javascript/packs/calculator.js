@@ -6,7 +6,7 @@ const calculator = () => {
     const total = document.querySelector('.total')
     const price = form.dataset.price;
     form.addEventListener('change', () => {
-      total.innerText = `${parseInt(form.value) * price} €`
+      total.innerText = ` Prix Total: ${parseInt(form.value) * price} €`
     })
   }
 }

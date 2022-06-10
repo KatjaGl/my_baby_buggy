@@ -8,6 +8,7 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import {calculator} from "./calculator"
+import {homeLink} from './home-link'
 
 Rails.start()
 Turbolinks.start()
@@ -26,4 +27,5 @@ document.addEventListener('turbolinks:load', () => {
 
 document.addEventListener('turbolinks:load', () => {
   calculator();
+  homeLink();
 });
